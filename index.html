@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Juan Lorenzo Corral Moreno - Full Stack Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Lorenzo Corral Moreno | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f2f5;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: #24292e;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
     }
 
-    h2 {
-      margin-top: 0.2rem;
-      font-weight: 300;
+    header p {
       font-size: 1.2rem;
-      color: #bbb;
+      font-weight: 300;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
       background: white;
+      border-radius: 12px;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
     }
 
-    .contact-info {
-      margin: 1rem 0;
+    .contact-info p {
+      margin: 0.8rem 0;
+      font-size: 1rem;
     }
 
-    .contact-info a {
-      color: #007bff;
+    .contact-info i {
+      margin-right: 10px;
+      color: #2c5364;
+    }
+
+    a {
+      color: #2c5364;
       text-decoration: none;
     }
 
-    .contact-info a:hover {
+    a:hover {
       text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #666;
       padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Juan Lorenzo Corral Moreno</h1>
-    <h2>Desarrollador Full Stack</h2>
+    <p>Desarrollador Full Stack</p>
   </header>
 
   <div class="container">
-    <section class="contact-info">
-      <p><strong>Teléfono:</strong> 645382550</p>
-      <p><strong>Email:</strong> <a href="mailto:juanlorenzocorral36@gmail.com">juanlorenzocorral36@gmail.com</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/jucorral42" target="_blank">github.com/jucorral42</a></p>
-    </section>
+    <div class="card contact-info">
+      <h2>Contacto</h2>
+      <p><i class="fas fa-phone-alt"></i> 645382550</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:juanlorenzocorral36@gmail.com">juanlorenzocorral36@gmail.com</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/jucorral42" target="_blank">github.com/jucorral42</a></p>
+    </div>
 
-    <section>
-      <h3>Bienvenido</h3>
+    <div class="card">
+      <h2>Sobre mí</h2>
       <p>
-        Soy desarrollador Full Stack con interés en crear soluciones tecnológicas eficientes y escalables. Este es un prototipo de mi currículum digital, que estará en constante evolución.
+        Soy un desarrollador Full Stack con pasión por la creación de aplicaciones web robustas, eficientes y escalables.
+        Este sitio está en construcción y evolucionará constantemente para reflejar mis proyectos, habilidades y experiencia profesional.
       </p>
-    </section>
+    </div>
   </div>
 
   <footer>
